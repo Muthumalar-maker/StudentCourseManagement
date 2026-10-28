@@ -3,8 +3,12 @@
 public class Enrollment
 {
     public int EnrollmentId { get; set; }
+
     public int StudentId { get; set; }
+
     public int CourseId { get; set; }
-    public DateTime EnrolledAt { get; set; }
-    public string Status { get; set; } = "Enrolled";
+
+    public DateTime EnrollmentDate { get; set; } = DateTime.Today;
+
+    public string Status { get; set; } = "Active";
 }
